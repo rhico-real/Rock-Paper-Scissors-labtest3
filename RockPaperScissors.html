@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="rockpaperscissors.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container container-1 text-center">
+    <h1 class="display-3">Rock Paper Scissors</h1>
+    <p class="lead">A game where you and the computer battle against uncertainty and become unnecessarily competitive.</p>
+    <hr class="my-4">
+    <button type="button" id="button" class="btn btn-warning" name="button" data-toggle="collapse" href="#flex-box-gameField" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="beGone()">Play!</button>
+    <br>
+    <div class="gameField collapse" id="flex-box-gameField">
+      <div id="choose">
+        <h1>Choose!</h1>
+      </div>
+      <img id="rock" data-toggle="tooltip" data-placement="top" title="Rock" src="img/rock.png" onclick="rpsGame(this)">
+      <img id="paper" data-toggle="tooltip" data-placement="top" title="Paper" src="img/paper.png" onclick="rpsGame(this)">
+      <img id="scissors" data-toggle="tooltip" data-placement="top" title="Scissors" src="img/scissors.png" onclick="rpsGame(this)">
+    </div>
+  </div>
+  <div class="container text-center">
+    <button type="button" id="authorbtn" class="btn btn-outline-secondary" name="button" data-toggle="collapse" href="#author" role="button" aria-expanded="false" aria-controls="collapseExample">Author</button>
+    <div class="collapse" id="author">
+      <small>Made with HTML5, CSS3, and Javascript</small>
+      <br>
+      <small>Rhico Abueme</small>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="lab.js"></script>
+  <script type="text/javascript">
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+</html>

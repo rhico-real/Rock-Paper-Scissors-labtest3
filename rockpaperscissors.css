@@ -1,0 +1,58 @@
+.container-1{
+  border: 0.5px solid gray;
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row .btn{
+  margin-right: 3rem;
+}
+
+.btn{
+  margin-bottom: 1rem;
+  font-size: 200%;
+}
+
+.gameField{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.gameField img{
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.gameField #rock:hover{
+  box-shadow: 10px 10px 5px 0px #8B2323;
+}
+
+.gameField #paper:hover{
+  box-shadow: 10px 10px 5px 0px blue;
+}
+
+.gameField #scissors:hover{
+  box-shadow: 10px 10px 5px 0px green;
+}
+
+#choose{
+  font-size:150%;
+  margin-top: 3.5rem;
+}
+
+#authorbtn{
+  font-size: 80%;
+  margin-top: 10rem;
+  padding: 0px 1rem;
+}
